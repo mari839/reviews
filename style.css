@@ -1,0 +1,79 @@
+:root {
+    --mono: "Oxygen mono", monospace;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: var(--mono);
+}
+.gradient{
+    height: 4px;
+    width: 200px;
+    background: gray;
+    margin: 0 auto;
+}
+.center{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.main-container{
+    width: 36vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: lightgray;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+.image-container{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 1px solid black; */
+    box-shadow: 8px -5px #595959;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+}
+i{
+    padding: 8px;
+}
+.previous-button, .next-button{
+    background: transparent;
+    border-color: transparent;
+    padding: 8px;
+}
+i:hover{
+    background-color: gray;
+}
+.random-button{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.random-button:hover{
+    background: gray;
+}
+h1,h2,h3,p{
+    margin: 5px;
+}
